@@ -1,13 +1,15 @@
 
 public class Demo {
   int x;
-}
-class TestDemo{
+
+
 	public static void main(String[] args) {
-		Demo myObj = new Demo();
-		myObj.x = 40;
-		System.out.println(myObj.x);
-		
+		Demo myObj1 = new Demo();
+		Demo myObj2 = new Demo();
+		myObj1.x = 24;
+		myObj2.x = 55;
+		System.out.println(myObj1.x);
+		System.out.println(myObj2.x);
 	}
 
 }
