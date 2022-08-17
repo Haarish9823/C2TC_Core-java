@@ -6,6 +6,8 @@ import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
@@ -20,6 +22,7 @@ import javax.persistence.Table;
 public class Employee implements Serializable{
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int employeeId;
 	private String name;
 	private double salary;
